@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+/* ----------- ::after e ::before: Adesivos que podemos colocar antes ou depois de coisas no site. -----------------*/
+/* ----------- *: Significa "tudo" em um site. ---------------------------*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------- CABEÇLAHO ---------------------------*/
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 20px;
+    width: 100vw;
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+}
+
+.inicio {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('https://fotos-jornaldocarro-estadao.nyc3.cdn.digitaloceanspaces.com/uploads/2019/09/20153023/Mercedes-Benz-AMG_GT_R_PRO-2020-1600-47-1160x827.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+.texto-inicio {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.texto-inicio .headTag {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.texto-inicio .subTag,
+.sectionHead {
+    font-size: 20px;
+    padding: 25px 0;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+}
+
+section {
+    display: block;
+    padding: 40px 0;
+    width: 100%;
+}
+
+section:nth-child(even) {
+    background-color: #fefefe;
+}
+
+section:nth-child(odd) {
+    background-color: #000000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #b6b6b6;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    transition: 1s;
+}
+
+
+/* ----------------------------- loja e beneficios ---------------------------*/
+#shop {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sectionHead {
+    text-align: center;
+    font-size: 40px;
+    margin: 25px 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.box {
+    text-align: center;
+    transition: all 0.2s ease-out;
+    padding: 24px 4px;
+    background-color: #004666;
+    color: #fff;
+    box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box:hover {
+    background-color: rgb(0, 93, 214);
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.box>p {
+    width: 85%;
+    text-align: center;
+    margin-top: 0;
+    transform: translate(10%, 0%);
+}
+
+.box>.icon {
+    font-size: 40px;
+    border: 2px solid #ffffff;
+    padding: 25px;
+    border-radius: 50%;
+    width: 45%;
+    display: block;
+    margin-left: 28%;
+    margin-bottom: 10px;
+}
+
+.box>h4 {
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.sectionSubHead {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    margin-bottom: 5px;
+    margin-top: 10%;
+}
+
+.sectionSubSubHead{
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.parallex-section {
+    margin: 0;
+    padding: 0;
+}
+
+.parallex {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+    display: block;
+    height: 40vh;
+    width: 100vw;
+}
+
+/* ------------------------------------------------------ imagens do meio do site ------------------------------------------------------*/
+#parallex-set-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2021/02/nuevo-motor-om-mercedes-estos-son-todos-secretos-2229895.jpg?tf=3840x');
+}
+
+#parallex-set-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://frotacia.com.br/wp-content/uploads/2018/01/mbb-7.jpg');
+}
+
+#parallex-set-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://frotacia.com.br/wp-content/uploads/2018/01/mercedes-benz_2.jpg');
+}
+
+#parallex-set-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.motor1.com/images/mgl/pbbeng/s3/mercedes-amg-one-2022.webp');
+}
+
+/* ------------------------------------------------------ NOSSOS SERVIÇOS ------------------------------------------------------*/
+.item-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    box-shadow: 9px 6px 13px rgba(0, 0, 0, 0.32);
+    transition: all 0.2s;
+}
+
+.item-box:hover {
+    transform: scale(1.2);
+}
+
+.item-box .item-box-img {
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.item-box .item-box-img>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.item-box-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 14px;
+    margin-left: 21px;
+    padding-left: 0;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.item-box .item-box-sub-text {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    line-height: 1;
+    margin: 52px 8px;
+    margin-left: 21px;
+    width: 80%;
+    font-style: italic;
+    font-size: 13px;
+    color: #e6e6e6;
+}
+
+.item-box .item-box-btn {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    margin: 105px 8px;
+    margin-left: 22px;
+    font-size: 14px;
+    padding: 5px 18px;
+    color: #fff;
+    background-color: #7a7986;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.item-box .item-box-btn:hover {
+    background-color: #202427;
+}
+
+.card-img-top {
+    max-height: 190px;
+}
+.card {
+    margin: 15px 0;
+    cursor: pointer;
+    box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------------------------------------- ESTILO DA TABELA ----------------------------------------------------------- */
+.tabela {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #d9d9d9;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Inclusive Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------------------------ rodapé ------------------------------------------------------*/
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #343a40;
+    z-index: 100;
+    text-align: right;
+    color: white;
+}
+
+
